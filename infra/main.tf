@@ -7,7 +7,7 @@ resource "aws_instance" "example_1" {
 
   ami           = "ami-0f2ce9ce760bd7133"
   instance_type = "t2.micro"
-  key_name      = "mahesh"
+  key_name      = "prajwal"
   tags = {
     Name = "production"
   }
