@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage("Pull SRC") {
             steps {
-                git branch: 'main', url: 'https://github.com/maheshgowdamg/docker-ansible-terraform-project.git'
+                git branch: 'main', url: 'https://github.com/18-Prajwal/sinchan_project.git'
             }
         }
         stage("move the target") {
@@ -26,13 +26,13 @@ pipeline {
         }
         stage("tag image"){
             steps{
-                sh 'docker tag app maheshgowdamg25/webapp:latest'
+                sh 'docker tag app prajwal0303/webapp:latest'
             }
         }
         stage("push image"){
             steps{
-               sh 'echo "Mahi@2001"| docker login -u maheshgowdamg25 --password-stdin'
-                sh 'docker push maheshgowdamg25/webapp:latest'
+               sh 'echo "Kohli@2003"| docker login -u prajwal0303 --password-stdin'
+                sh 'docker push prajwal0303/webapp:latest'
             }
         }
         stage("remove images locally"){
