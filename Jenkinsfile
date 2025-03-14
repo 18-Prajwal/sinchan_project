@@ -11,7 +11,7 @@ pipeline {
         }
         stage("move the target") {
             steps {
-                sh 'mv target/webapp.war .'
+                sh 'mv target/students.war .'
             }
         }
         stage("Prepare Build") {
