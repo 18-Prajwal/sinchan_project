@@ -31,7 +31,7 @@ pipeline {
         }
         stage("push image"){
             steps{
-               sh 'echo "Kohli@2003"| docker login -u prajwal0303 --password-stdin'
+               sh 'echo "Prajwal@2003"| docker login -u prajwal0303 --password-stdin'
                 sh 'docker push prajwal0303/webapp:latest'
             }
         }
